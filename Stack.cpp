@@ -10,7 +10,7 @@ int main()
 {
 	int ch=0,val;
 	while(ch!=5){
-	cout<<"\nEnter the Choice : \n 1. Push \n 2. Pop \n 3. Check Stack \n 4. Print Stack \n 5. Exit Enter: ";
+	cout<<"\nEnter the Choice : \n 1. Push \n 2. Pop \n 3. Check Stack \n 4. Print Stack \n 5. Exit \nEnter: ";
 	cin>>ch;
 	
 		switch(ch){
@@ -52,9 +52,9 @@ void pop(){
 }
 void stack_check(){
 	if(top==-1)
-		cout<<"Stack Empty. OR Stack Underflow\n";
+		cout<<"Stack Empty OR Stack Underflow\n";
 	else if(top==size)
 		cout<<"Stack Overflow\n";
 	else
-		cout<<"Stack is Neither NoR Overflow\n";
+		cout<<"Stack is Neither Underflow NoR Overflow\n";
 }
