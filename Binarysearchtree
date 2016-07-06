@@ -1,0 +1,164 @@
+#include <iostream>
+#include <vector>
+#include <iterator>
+
+using namespace std;
+
+struct bstnode
+{
+	int data;
+	bstnode* lchild;
+	bstnode* rchild;
+};
+bstnode* getnewnode(int val){
+	bstnode* n=new bstnode();
+	n->data=val;
+	n->lchild=NULL;
+	n->rchild=NULL;
+	return n;
+}
+bstnode* root = NULL;
+bstnode* insert(bstnode* root,int data){
+	if(root==NULL){
+		root=getnewnode(data);
+	}
+	else if(data <= root->data){
+		root->lchild=insert(root->lchild,data);
+	}
+	else if(data > root->data){
+		root->rchild=insert(root->rchild,data);
+	}
+	return root;
+}
+bool search(bstnode* root,int item){
+	if(root==NULL)
+		return false;
+	if(root->data == item){
+		return true;
+	}
+	else if(item < root->data){
+			return search(root->lchild,item);
+		}
+	else if(item > root->data){
+			return search(root->rchild,item);
+		}
+}
+void inorder(bstnode* root, vector<int>* output){
+	if(root==NULL){
+		return;
+	}
+	inorder(root->lchild, output);
+	cout<<root->data<<" ";
+	output->push_back(root->data);
+	inorder(root->rchild, output);
+}
+void preorder(bstnode* root){
+	if(root==NULL){
+		return;
+	}
+	cout<<root->data<<" ";
+	preorder(root->lchild);
+	preorder(root->rchild);
+}
+void postorder(bstnode* root){
+	if(root==NULL){
+		return;
+	}
+	postorder(root->lchild);
+	postorder(root->rchild);
+	cout<<root->data<<" ";
+}
+void comparevec(vector<int> v1,vector<int> v2){
+	if(v1 == v2){
+		cout<<"correct";
+	}
+	return;
+}
+void testbst(){
+	root=insert(root,100);
+	root=insert(root,99);
+	root=insert(root,101);
+	root=insert(root,200);
+	root=insert(root,102);
+	vector<int> output;
+	inorder(root, &output);
+	vector<int>::iterator it;
+	cout << output.size() << "\n";
+	for (it = output.begin(); it != output.end(); it++) {
+		cout << *it << "\n";
+	}
+	vector<int> corr;
+	corr.push_back(99);
+	corr.push_back(100);
+	corr.push_back(101);
+	corr.push_back(102);
+	corr.push_back(200);
+	if(corr == output){
+		cout<<"CORRECT";
+	}
+	
+	comparevec(corr,output);
+	return;
+}
+
+void testsearch(){
+	bool chk=search(root,100);
+		if(chk==true){
+			cout<<"Found";
+			return;
+		}
+		else
+			cout<<"Not found";
+	return;
+}
+int main(){
+	
+	testbst();
+	testsearch();
+	int num,item;
+	int ch,ch1;
+	bool ans;
+	while(1){
+		cout<<"1. Insert\n2. Delete\n3. Search\n4. Traversal\n5. Exit\nEnter the choice: ";
+		cin>>ch;
+		switch(ch){
+			case 1: cout<<"Enter the data: ";
+					cin>>num;
+					root=insert(root,num);
+					break;
+			case 3: cout<<"Enter the item to be searched: ";
+					cin>>item;
+					ans=search(root,item);
+					if(ans==1){
+						cout<<"Item found\n";
+					}
+					if(ans==0)
+						cout<<"Item not found\n";
+					break;
+			case 4: cout<<"\n\t1. Inorder\n\t2. Preorder\n\t3. Postorder\n\tEnter:";
+					cin>>ch1;
+					switch(ch1){
+						case 1: cout<<"Inorder Traversal: ";
+								inorder(root);
+								cout<<endl;
+								break;
+						case 2: cout<<"Preorder Traversal: ";
+								preorder(root);
+								cout<<endl;
+								break;
+						case 3: cout<<"Postorder Traversal: ";
+								postorder(root);
+								cout<<endl;
+								break;
+						default: cout<<"Wrong Choice";
+								 cout<<endl;
+								 break;
+							}
+						break;	
+				case 5: cout<<"Exit";
+						exit(0);
+				default: cout<<"Wrong Input"<<endl;
+						 break;	
+		}
+	}
+}
