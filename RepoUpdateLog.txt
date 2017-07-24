@@ -1,0 +1,10 @@
+Till 23-Jul-2017
+
+*Done with Array Operations such as Deletion, Insertion, Linear Search and Updation(Seperate java code for each)
+*Basic operations of the stack is implemented(using array) such as push, pop, peek and isEmpty with overflow and
+ underflow Condition.
+
+24-Jul-2017
+
+*Implemented simple queue with all its operations such as enqueue, dequeue, peek, isFull, isEmpty along with display
+ of the current queue.
