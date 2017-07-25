@@ -8,4 +8,10 @@ Till 23-Jul-2017
 
 *Implemented simple queue with all its operations such as enqueue, dequeue, peek, isFull, isEmpty along with display
  of the current queue.
- *
+ 
+25-Jul-2017
+
+*Implemented singly linked list or singly linked list with operations such as insertion, display, search along with first_node_removal, last_node_removal, particular_key_removal operation on the linked list
+
+*Made some changes to the queue implementation.(Changed name of method from enqueue to push and dequeue to pop. Also
+updated the traversal method)
