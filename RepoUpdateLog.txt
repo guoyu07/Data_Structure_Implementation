@@ -15,3 +15,16 @@ Till 23-Jul-2017
 
 *Made some changes to the queue implementation.(Changed name of method from enqueue to push and dequeue to pop. Also
 updated the traversal method)
+
+26-Jul-2017
+
+*Implemented Doubly Linked list with the operations such as inserting a node at the
+1) At the front of the DLL 2) After a given node. 3) At the end of the DLL 4) Before a given node.
+
+*Along with deleting the nodes from
+1) Front of the List 2) Middle of the list 3) End of the list 
+
+*Along with the display of DLL
+1) Forward Display 2) Reverse Display
+
+27-Jul-2017
