@@ -43,3 +43,11 @@ updated the traversal method)
 *Along with the display of DLL
 1) Forward Display 
 2) Reverse Display //Only in Doubly Circular Linked List
+
+*Merged the 4 ARRAY OPERATIONS java file into 1 ArrayOperations.java file
+ It includes operations such as:
+1) kth Insertion
+2) kth Deletion
+3) kth Updation
+4) Linear Search for a key Along with Formatted output display.
+
