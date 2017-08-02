@@ -11,7 +11,8 @@ Till 23-Jul-2017
  
 25-Jul-2017------------------------------------------------------------------------------------------------------------
 
-*Implemented SINGLY LINKED LIST or single linked list with operations such as insertion, display, search along with first_node_removal, last_node_removal, particular_key_removal operation on the linked list
+*Implemented SINGLY LINKED LIST or single linked list with operations such as insertion, display, search along with
+first_node_removal, last_node_removal, particular_key_removal operation on the linked list
 
 *Made some changes to the queue implementation.(Changed name of method from enqueue to push and dequeue to pop. Also
 updated the traversal method)
