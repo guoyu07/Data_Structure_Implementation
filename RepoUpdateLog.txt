@@ -1,24 +1,24 @@
 Till 23-Jul-2017
 
-*Done with Array Operations such as Deletion, Insertion, Linear Search and Updation(Seperate java code for each)
+*Done with ARRAY OPERATIONS such as Deletion, Insertion, Linear Search and Updation(Seperate java code for each)
 *Basic operations of the stack is implemented(using array) such as push, pop, peek and isEmpty with overflow and
  underflow Condition.
 
-24-Jul-2017
+24-Jul-2017----------------------------------------------------------------------------------------------------------
 
-*Implemented simple queue with all its operations such as enqueue, dequeue, peek, isFull, isEmpty along with display
+*Implemented SIMPLE QUEUE with all its operations such as enqueue, dequeue, peek, isFull, isEmpty along with display
  of the current queue.
  
-25-Jul-2017
+25-Jul-2017------------------------------------------------------------------------------------------------------------
 
-*Implemented singly linked list or singly linked list with operations such as insertion, display, search along with first_node_removal, last_node_removal, particular_key_removal operation on the linked list
+*Implemented SINGLY LINKED LIST or single linked list with operations such as insertion, display, search along with first_node_removal, last_node_removal, particular_key_removal operation on the linked list
 
 *Made some changes to the queue implementation.(Changed name of method from enqueue to push and dequeue to pop. Also
 updated the traversal method)
 
-26-Jul-2017
+26-Jul-2017------------------------------------------------------------------------------------------------------------
 
-*Implemented Doubly Linked list with the operations such as inserting a node at the
+*Implemented DOUBLY LINKED LIST with the operations such as inserting a node at the
 1) At the front of the DLL 2) After a given node. 3) At the end of the DLL 4) Before a given node.
 
 *Along with deleting the nodes from
@@ -27,4 +27,18 @@ updated the traversal method)
 *Along with the display of DLL
 1) Forward Display 2) Reverse Display
 
-27-Jul-2017
+02-Aug-2017-------------------------------------------------------------------------------------------------------------
+
+*Implemented CIRCULAR SINGLY and CIRCULAR DOUBLY LINKED LIST with the operations such as inserting a node at the
+1) At the front of the DLL
+2) After a given node. 
+3) At the end of the DLL 
+4) Before a given node //Only in Doubly Circular Linked List
+5) To an emptyList
+
+*Along with deleting the nodes from
+1) Front of the List 2) Middle of the list 3) End of the list 
+
+*Along with the display of DLL
+1) Forward Display 
+2) Reverse Display //Only in Doubly Circular Linked List
